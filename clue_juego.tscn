@@ -1,0 +1,491 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://clue_juego.gd" type="Script" id=1]
+[ext_resource path="res://c39cef2c0907dd26d9eea87ec5ad68a1.jpg" type="Texture" id=2]
+[ext_resource path="res://Letra/Fresco Stamp.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 50
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 30
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 40
+font_data = ExtResource( 3 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="mapa" type="TextureButton" parent="."]
+margin_left = 512.0
+margin_top = 8.0
+margin_right = 1016.0
+margin_bottom = 594.0
+texture_normal = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Arma" type="TextureButton" parent="."]
+margin_left = 24.0
+margin_top = 72.0
+margin_right = 176.0
+margin_bottom = 168.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Arma"]
+margin_left = 24.0
+margin_top = 8.0
+margin_right = 168.0
+margin_bottom = 133.0
+custom_fonts/font = SubResource( 1 )
+text = "ARMA 
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Persona" type="TextureButton" parent="."]
+margin_left = 16.0
+margin_top = 248.0
+margin_right = 176.0
+margin_bottom = 312.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Persona"]
+margin_left = 32.0
+margin_right = 156.0
+margin_bottom = 61.0
+custom_fonts/font = SubResource( 2 )
+text = "PERSONA"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Ubicacion" type="TextureButton" parent="."]
+margin_left = 56.0
+margin_top = 400.0
+margin_right = 184.0
+margin_bottom = 456.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Ubicacion"]
+margin_left = -8.0
+margin_right = 120.0
+margin_bottom = 61.0
+custom_fonts/font = SubResource( 3 )
+text = "LUGAR "
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxArma" type="VBoxContainer" parent="."]
+visible = false
+margin_left = 192.0
+margin_top = 48.0
+margin_right = 448.0
+margin_bottom = 176.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Soga" type="Button" parent="VBoxArma"]
+margin_right = 256.0
+margin_bottom = 20.0
+text = "SOGA"
+
+[node name="Hacha" type="Button" parent="VBoxArma"]
+margin_top = 24.0
+margin_right = 256.0
+margin_bottom = 44.0
+text = "HACHA"
+
+[node name="Tijeras" type="Button" parent="VBoxArma"]
+margin_top = 48.0
+margin_right = 256.0
+margin_bottom = 68.0
+text = "TIJERAS"
+
+[node name="Martillo" type="Button" parent="VBoxArma"]
+margin_top = 72.0
+margin_right = 256.0
+margin_bottom = 92.0
+text = "MARTILLO"
+
+[node name="Bate" type="Button" parent="VBoxArma"]
+margin_top = 96.0
+margin_right = 256.0
+margin_bottom = 116.0
+text = "BATE "
+
+[node name="ret_arma" type="Button" parent="VBoxArma"]
+margin_top = 120.0
+margin_right = 256.0
+margin_bottom = 140.0
+text = "OCULTAR "
+
+[node name="VBoxPersona" type="VBoxContainer" parent="."]
+visible = false
+margin_left = 192.0
+margin_top = 216.0
+margin_right = 448.0
+margin_bottom = 356.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Celeste" type="Button" parent="VBoxPersona"]
+margin_right = 256.0
+margin_bottom = 20.0
+text = "CELESTE"
+
+[node name="Blanco" type="Button" parent="VBoxPersona"]
+margin_top = 24.0
+margin_right = 256.0
+margin_bottom = 44.0
+text = "BLANCO"
+
+[node name="Pardo" type="Button" parent="VBoxPersona"]
+margin_top = 48.0
+margin_right = 256.0
+margin_bottom = 68.0
+text = "PARDO"
+
+[node name="Amapola" type="Button" parent="VBoxPersona"]
+margin_top = 72.0
+margin_right = 256.0
+margin_bottom = 92.0
+text = "AMAPOLA"
+
+[node name="Mora" type="Button" parent="VBoxPersona"]
+margin_top = 96.0
+margin_right = 256.0
+margin_bottom = 116.0
+text = "MORA"
+
+[node name="r_persona" type="Button" parent="VBoxPersona"]
+margin_top = 120.0
+margin_right = 256.0
+margin_bottom = 140.0
+text = "OCULTAR "
+
+[node name="VBoxLugar" type="VBoxContainer" parent="."]
+visible = false
+margin_left = 192.0
+margin_top = 384.0
+margin_right = 448.0
+margin_bottom = 524.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sala" type="Button" parent="VBoxLugar"]
+margin_right = 256.0
+margin_bottom = 20.0
+text = "SALA"
+
+[node name="Cocina" type="Button" parent="VBoxLugar"]
+margin_top = 24.0
+margin_right = 256.0
+margin_bottom = 44.0
+text = "COCINA"
+
+[node name="Dormitorio" type="Button" parent="VBoxLugar"]
+margin_top = 48.0
+margin_right = 256.0
+margin_bottom = 68.0
+text = "DORMITORIO"
+
+[node name="Jardin" type="Button" parent="VBoxLugar"]
+margin_top = 72.0
+margin_right = 256.0
+margin_bottom = 92.0
+text = "JARDIN"
+
+[node name="Sotano" type="Button" parent="VBoxLugar"]
+margin_top = 96.0
+margin_right = 256.0
+margin_bottom = 116.0
+text = "SOTANO"
+
+[node name="ret_lugar" type="Button" parent="VBoxLugar"]
+margin_top = 120.0
+margin_right = 256.0
+margin_bottom = 140.0
+text = "OCULTAR "
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+margin_right = 94.0
+margin_bottom = 58.0
+window_title = "¡Alerta!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VLugar" type="TextureButton" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VLugar"]
+margin_right = 40.0
+margin_bottom = 14.0
+
+[node name="VLugar2" type="TextureButton" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VLugar2"]
+margin_right = 40.0
+margin_bottom = 14.0
+
+[node name="VLugar3" type="TextureButton" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VLugar3"]
+visible = false
+margin_right = 40.0
+margin_bottom = 14.0
+
+[node name="Confirmacion" type="HBoxContainer" parent="."]
+visible = false
+margin_left = 16.0
+margin_top = 72.0
+margin_right = 279.0
+margin_bottom = 200.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Arma_1" type="VBoxContainer" parent="Confirmacion"]
+margin_right = 78.0
+margin_bottom = 128.0
+
+[node name="A_Soga" type="Button" parent="Confirmacion/Arma_1"]
+margin_right = 78.0
+margin_bottom = 20.0
+text = "SOGA "
+
+[node name="A_Hacha" type="Button" parent="Confirmacion/Arma_1"]
+margin_top = 24.0
+margin_right = 78.0
+margin_bottom = 44.0
+text = "HACHA"
+
+[node name="A_Tijeras" type="Button" parent="Confirmacion/Arma_1"]
+margin_top = 48.0
+margin_right = 78.0
+margin_bottom = 68.0
+text = "TIJERAS"
+
+[node name="A_Martillo" type="Button" parent="Confirmacion/Arma_1"]
+margin_top = 72.0
+margin_right = 78.0
+margin_bottom = 92.0
+text = "MARTILLO"
+
+[node name="A_Bate" type="Button" parent="Confirmacion/Arma_1"]
+margin_top = 96.0
+margin_right = 78.0
+margin_bottom = 116.0
+text = "BATE"
+
+[node name="Persona_1" type="VBoxContainer" parent="Confirmacion"]
+margin_left = 82.0
+margin_right = 159.0
+margin_bottom = 128.0
+
+[node name="P_Celeste" type="Button" parent="Confirmacion/Persona_1"]
+margin_right = 77.0
+margin_bottom = 20.0
+text = "CELESTE"
+
+[node name="P_Blanco" type="Button" parent="Confirmacion/Persona_1"]
+margin_top = 24.0
+margin_right = 77.0
+margin_bottom = 44.0
+text = "BLANCO"
+
+[node name="P_Pardo" type="Button" parent="Confirmacion/Persona_1"]
+margin_top = 48.0
+margin_right = 77.0
+margin_bottom = 68.0
+text = "PARDO"
+
+[node name="P_Amapola" type="Button" parent="Confirmacion/Persona_1"]
+margin_top = 72.0
+margin_right = 77.0
+margin_bottom = 92.0
+text = "AMAPOLA"
+
+[node name="A_Mora" type="Button" parent="Confirmacion/Persona_1"]
+margin_top = 96.0
+margin_right = 77.0
+margin_bottom = 116.0
+text = "MORA"
+
+[node name="Lugar" type="VBoxContainer" parent="Confirmacion"]
+margin_left = 163.0
+margin_right = 263.0
+margin_bottom = 128.0
+
+[node name="L_Sala" type="Button" parent="Confirmacion/Lugar"]
+margin_right = 100.0
+margin_bottom = 20.0
+text = "SALA"
+
+[node name="L_Cocina" type="Button" parent="Confirmacion/Lugar"]
+margin_top = 24.0
+margin_right = 100.0
+margin_bottom = 44.0
+text = "COCINA"
+
+[node name="L_Jardin" type="Button" parent="Confirmacion/Lugar"]
+margin_top = 48.0
+margin_right = 100.0
+margin_bottom = 68.0
+text = "JARDIN"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="L_Sotano" type="Button" parent="Confirmacion/Lugar"]
+margin_top = 72.0
+margin_right = 100.0
+margin_bottom = 92.0
+text = "SOTANO"
+
+[node name="L_Dormitorio" type="Button" parent="Confirmacion/Lugar"]
+margin_top = 96.0
+margin_right = 100.0
+margin_bottom = 116.0
+text = "DORMITORIO"
+
+[node name="Aceptar" type="TextureButton" parent="."]
+margin_left = 32.0
+margin_top = 528.0
+margin_right = 136.0
+margin_bottom = 600.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Aceptar"]
+anchor_left = 0.051
+anchor_top = 0.333
+anchor_right = 0.051
+anchor_bottom = 0.333
+margin_left = -7.912
+margin_top = -7.968
+margin_right = 88.088
+margin_bottom = 64.032
+custom_fonts/font = SubResource( 4 )
+text = "Lo tengo!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Seleccione" type="TextureButton" parent="."]
+margin_right = 328.0
+margin_bottom = 72.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="opcion" type="Label" parent="Seleccione"]
+margin_left = 16.0
+margin_right = 266.0
+margin_bottom = 49.0
+custom_fonts/font = SubResource( 5 )
+text = "Seleccione una opcion:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PopVerify" type="AcceptDialog" parent="."]
+margin_left = 224.0
+margin_top = 144.0
+margin_right = 712.0
+margin_bottom = 304.0
+window_title = "¡Alerta!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+bbcode_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Arma" to="." method="_on_Arma_pressed"]
+[connection signal="pressed" from="Persona" to="." method="_on_Persona_pressed"]
+[connection signal="pressed" from="Ubicacion" to="." method="_on_Ubicacion_pressed"]
+[connection signal="pressed" from="VBoxArma/Soga" to="." method="_on_Soga_pressed"]
+[connection signal="pressed" from="VBoxArma/Hacha" to="." method="_on_Hacha_pressed"]
+[connection signal="pressed" from="VBoxArma/Tijeras" to="." method="_on_Tijeras_pressed"]
+[connection signal="pressed" from="VBoxArma/Martillo" to="." method="_on_Martillo_pressed"]
+[connection signal="pressed" from="VBoxArma/Bate" to="." method="_on_Bate_pressed"]
+[connection signal="pressed" from="VBoxArma/ret_arma" to="." method="_on_ret_arma_pressed"]
+[connection signal="pressed" from="VBoxPersona/Celeste" to="." method="_on_Celeste_pressed"]
+[connection signal="pressed" from="VBoxPersona/Blanco" to="." method="_on_Blanco_pressed"]
+[connection signal="pressed" from="VBoxPersona/Pardo" to="." method="_on_Pardo_pressed"]
+[connection signal="pressed" from="VBoxPersona/Amapola" to="." method="_on_Amapola_pressed"]
+[connection signal="pressed" from="VBoxPersona/Mora" to="." method="_on_Mora_pressed"]
+[connection signal="pressed" from="VBoxPersona/r_persona" to="." method="_on_r_persona_pressed"]
+[connection signal="pressed" from="VBoxLugar/Sala" to="." method="_on_Sala_pressed"]
+[connection signal="pressed" from="VBoxLugar/Cocina" to="." method="_on_Cocina_pressed"]
+[connection signal="pressed" from="VBoxLugar/Dormitorio" to="." method="_on_Dormitorio_pressed"]
+[connection signal="pressed" from="VBoxLugar/Jardin" to="." method="_on_Jardin_pressed"]
+[connection signal="pressed" from="VBoxLugar/Sotano" to="." method="_on_Sotano_pressed"]
+[connection signal="pressed" from="VBoxLugar/ret_lugar" to="." method="_on_ret_lugar_pressed"]
+[connection signal="pressed" from="Confirmacion/Arma_1/A_Soga" to="." method="_on_A_Soga_pressed"]
+[connection signal="pressed" from="Confirmacion/Arma_1/A_Hacha" to="." method="_on_A_Hacha_pressed"]
+[connection signal="pressed" from="Confirmacion/Arma_1/A_Tijeras" to="." method="_on_A_Tijeras_pressed"]
+[connection signal="pressed" from="Confirmacion/Arma_1/A_Martillo" to="." method="_on_A_Martillo_pressed"]
+[connection signal="pressed" from="Confirmacion/Arma_1/A_Bate" to="." method="_on_A_Bate_pressed"]
+[connection signal="pressed" from="Confirmacion/Persona_1/P_Celeste" to="." method="_on_P_Celeste_pressed"]
+[connection signal="pressed" from="Confirmacion/Persona_1/P_Blanco" to="." method="_on_P_Blanco_pressed"]
+[connection signal="pressed" from="Confirmacion/Persona_1/P_Pardo" to="." method="_on_P_Pardo_pressed"]
+[connection signal="pressed" from="Confirmacion/Persona_1/P_Amapola" to="." method="_on_P_Amapola_pressed"]
+[connection signal="pressed" from="Confirmacion/Persona_1/A_Mora" to="." method="_on_A_Mora_pressed"]
+[connection signal="pressed" from="Confirmacion/Lugar/L_Sala" to="." method="_on_L_Sala_pressed"]
+[connection signal="pressed" from="Confirmacion/Lugar/L_Cocina" to="." method="_on_L_Cocina_pressed"]
+[connection signal="pressed" from="Confirmacion/Lugar/L_Jardin" to="." method="_on_L_Jardin_pressed"]
+[connection signal="pressed" from="Confirmacion/Lugar/L_Sotano" to="." method="_on_L_Sotano_pressed"]
+[connection signal="pressed" from="Confirmacion/Lugar/L_Dormitorio" to="." method="_on_L_Dormitorio_pressed"]
+[connection signal="pressed" from="Aceptar" to="." method="_on_Aceptar_pressed"]
